@@ -3,19 +3,19 @@
 using namespace std;
 
 
-// int maxSubArrSum (int arr[], int n){
-//     int maxSum = INT_MIN, currSum;
+int maxSubArrSum (int arr[], int n){
+    int maxSum = INT_MIN, currSum;
 
-//     for(int i=0; i<n; i++){
-//         currSum = 0;
-//         for(int j=i; j<n; j++){
-//             currSum += arr[j];
-//             maxSum = max(maxSum, currSum);
-//         }
-//     }
+    for(int i=0; i<n; i++){
+        currSum = 0;
+        for(int j=i; j<n; j++){
+            currSum += arr[j];
+            maxSum = max(maxSum, currSum);
+        }
+    }
 
-//     return maxSum;
-// }
+    return maxSum;
+}
 
 
 int kadanes(int arr[], int n){
